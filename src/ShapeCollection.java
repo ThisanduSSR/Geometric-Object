@@ -3,3 +3,4 @@ public interface ShapeCollection {
     public abstract void printShapeList();
     public abstract boolean runMenu();
 }
+
