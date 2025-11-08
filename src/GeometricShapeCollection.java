@@ -86,6 +86,12 @@ public class GeometricShapeCollection implements ShapeCollection{
         }
         return exit:
     }
+    public static void main(String[] args) {
+        ShapeCollection sys = new GeometricShapeCollection(5);
+        boolean exit = false;
 
-
+        while(!exit) {
+            exit = sys.runMenu();
+        }
+    }
 }
