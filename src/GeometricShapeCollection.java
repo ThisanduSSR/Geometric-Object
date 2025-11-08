@@ -70,9 +70,21 @@ public class GeometricShapeCollection implements ShapeCollection{
                             addShape(new Square(side, color, filled));
                             break;
                     }
+                } else {
+                    System.out.println("No more space to add shapes");
                 }
-
+                break;
+            case 2:
+                printShapeList();
+                break;
+            case 3:
+                exit = true;
+                System.out.println("program ended!");
+                break;
+            default:
+                System.out.println("Invalid choice!");
         }
+        return exit:
     }
 
 
