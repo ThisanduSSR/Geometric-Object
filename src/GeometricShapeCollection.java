@@ -58,7 +58,17 @@ public class GeometricShapeCollection implements ShapeCollection{
                             addShape(new Circle(r, color, filled));
                             break;
                         case 2:
-
+                            System.out.println("Enter length:");
+                            double l = s.nextDouble();
+                            System.out.println("Enter width:");
+                            double w = s.nextDouble();
+                            addShape(new Rectangle(l, w, color, filled));
+                            break;
+                        case 3:
+                            System.out.println("Enter side:");
+                            double side = s.nextDouble();
+                            addShape(new Square(side, color, filled));
+                            break;
                     }
                 }
 
