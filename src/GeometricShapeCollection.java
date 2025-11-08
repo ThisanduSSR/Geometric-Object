@@ -18,10 +18,28 @@ public class GeometricShapeCollection implements ShapeCollection{
             System.out.println("No more space in the list");
         }
     }
+    @Override
     public void printShapeList() {
         for(int i = 0; i<totalNumShape; i++){
             GeometricObject shape = shapeList[i];
             System.out.println("shape = "+shape.getShape()+",Area ="+shape.getArea()+", Perimeter ="+shape.getPerimeter());
+
+        }
+    }
+    @Override
+    public boolean runMenu() {
+        Scanner s = new Scanner(System.in);
+        boolean exit = false;
+
+        System.out.println("\n---shape Menu---");
+        System.out.println("1. Add Shape");
+        System.out.println("2. Print Shape");
+        System.out.println("3. Exit");
+        System.out.print("Enter your choice: ");
+        int choice = s.nextInt();
+
+        switch(choice){
+            case 1:
 
         }
     }
