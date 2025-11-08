@@ -40,6 +40,27 @@ public class GeometricShapeCollection implements ShapeCollection{
 
         switch(choice){
             case 1:
+                if(totalNumShape < maxNumShape){
+                    System.out.println("Select shape: 1.circle 2.Rectangle 3.Square");
+                    int type = s.nextInt();
+                    s.nextLine();
+
+                    System.out.print("Enter color;");
+                    String color = s.nextLine();
+
+                    System.out.println("Is filled(y/n):");
+                    boolean filled = s.nextLine().equalsIgnoreCase("y");
+
+                    switch (type) {
+                        case 1:
+                            System.out.println("Enter radius:");
+                            double r = s.nextDouble();
+                            addShape(new Circle(r, color, filled));
+                            break;
+                        case 2:
+
+                    }
+                }
 
         }
     }
