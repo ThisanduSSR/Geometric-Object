@@ -7,5 +7,12 @@ public class SimpleThem {
         this.commonAttacks = commonAttacks;
 
     }
-
+    void showInfo() {
+        System.out.println("Domain:"+name);
+        System.out.println("common Attacks:");
+        for(String attack: commonAttacks){
+            System.out.println("  -"+ attack);
+        }
+        System.out.println();
+    }
 }
