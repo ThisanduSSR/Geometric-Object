@@ -22,9 +22,6 @@ public class ITInfrastructureSecurity{
         Domain userDomain = new Domain("User Domain",
                 new String[]{"Phishing", "Social Engineering", "Weak Passwords"});
 
-        Domain workstationDomain = new Domain("Workstation Domain",
-                new String[]{"Malware", "Viruses", "Unauthorized Software"});
-
         Domain lanDomain = new Domain("LAN Domain",
                 new String[]{"Sniffing", "Packet Capture", "Unauthorized Access"});
 
